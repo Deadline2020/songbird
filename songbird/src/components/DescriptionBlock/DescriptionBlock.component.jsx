@@ -2,14 +2,9 @@ import React, { Component } from 'react';
 
 import './DescriptionBlock.styles.scss';
 
-// import Answer from '../Answer';
-
 class DescriptionBlock extends Component {
   render() {
-    // const { correctAnswerIndex, arrIncorrectAnswers, checkAnswer } = this.props;
-    // const listMarks = ['1', '2', '3', '4', '5', '6'];
     const { dataForDescription } = this.props;
-    console.log(dataForDescription);
 
     if (dataForDescription.name) {
       return (
@@ -27,14 +22,14 @@ class DescriptionBlock extends Component {
               <p className="media_wrapper--species">
                 {dataForDescription.species}
               </p>
-              <audio className="media_wrapper--player" controls>
+              <audio className="media_wrapper--player" src={dataForDescription.audio} controls>
+                Your browser does not support the audio element.
                 <track kind="captions" />
-                <source src={dataForDescription.audio} />
               </audio>
             </div>
           </div>
           <div className="text_wrapper">
-          {dataForDescription.description}
+            {dataForDescription.description}
           </div>
         </div>
       );

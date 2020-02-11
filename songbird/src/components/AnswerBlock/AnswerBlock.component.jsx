@@ -6,21 +6,21 @@ import Answer from '../Answer';
 
 class AnswerBlock extends Component {
   render() {
-    const { correctAnswerIndex, arrIncorrectAnswers, checkAnswer } = this.props;
-    const listMarks = ['1', '2', '3', '4', '5', '6'];
-
+    const {
+      dataForAnswers, correctAnswerIndex, arrIncorrectAnswers, checkAnswer,
+    } = this.props;
     return (
       <div className="answer_block">
         <ul>
-          {listMarks.map((item, ind) => {
+          {dataForAnswers.map((item, ind) => {
             let indicatorClassName = 'answer--indicator';
             if (correctAnswerIndex === ind) indicatorClassName = 'answer--indicator answer--indicator-true';
             if (arrIncorrectAnswers.includes(ind)) indicatorClassName = 'answer--indicator answer--indicator-false';
             return (
               <Answer
                 indicatorClassName={indicatorClassName}
-                key={item}
-                name={item}
+                key={item.id}
+                name={item.name}
                 ind={ind}
                 onClick={checkAnswer}
               />

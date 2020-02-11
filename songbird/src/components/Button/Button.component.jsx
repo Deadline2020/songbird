@@ -4,10 +4,10 @@ import './Button.styles.scss';
 
 class Button extends Component {
   render() {
-    const { goNextStage, isNext } = this.props;
+    const { onClick, active, text } = this.props;
     return (
-      <button className={isNext ? 'button button-active' : 'button'} onClick={goNextStage} type="button">
-        Далее
+      <button className={active ? 'button button-active' : 'button'} onClick={onClick} type="button">
+        {text}
       </button>
     );
   }

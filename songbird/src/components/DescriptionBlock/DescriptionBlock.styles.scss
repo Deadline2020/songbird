@@ -3,7 +3,12 @@
   // display: flex;
   // width: 100%;
   flex: 1 1 55%;
-
+  // flex-wrap: wrap;
+  // justify-content: space-around;
+  // align-items: center;
+  // width: 100%;
+  // margin: 10px 0;
+  // overflow: hidden;
   background-color: lighten(#000000e6, 20%);
   margin: 3px 0;
   padding: 15px;
@@ -11,7 +16,18 @@
   border: 1px solid white;
   border-radius: 15px;
 
+  // &--mark {
+  //   flex: 1 1 auto;
+  //   padding: 10px;
 
+  //   text-align: center;
+
+  //   background-color: #076598;
+
+  //   &-active {
+  //     background-color: lighten(#076598, 15%);
+  //   }
+  // }
 
   &--invite {
     margin: 0 0 5px 20px;
@@ -61,7 +77,10 @@ font-size: 2rem;
     // border-bottom: 1px solid gray;
     width: 100%;
     margin: 15px 0;
-  
+    // text-align: center;
+    // line-height: 50px;
+    // height: 50px;
+
     outline: none;
   }
 }

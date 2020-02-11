@@ -41,8 +41,16 @@ button {
   margin: 0 auto;
   padding: 15px;
 
-  &--game_fields {
+  &--game_page {
     display: flex;
     flex-wrap: wrap;
+  }
+
+  &--congrat_page {
+    width: 100%;
+    background-color: lighten(#000000e6, 20%);
+    padding: 30px;
+    border: 1px solid white;
+    border-radius: 15px;
   }
 }

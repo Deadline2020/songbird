@@ -17,9 +17,9 @@ class QuestionBlock extends Component {
           <p className="question_block--name">
             {dataForQuestion.name}
           </p>
-          <audio className="question_block--player" controls>
+          <audio className="question_block--player" src={dataForQuestion.audio} controls>
+            Your browser does not support the audio element.
             <track kind="captions" />
-            <source src={dataForQuestion.audio} />
           </audio>
         </div>
       </div>
