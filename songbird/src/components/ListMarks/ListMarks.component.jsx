@@ -5,8 +5,7 @@ import './ListMarks.styles.scss';
 class ListMarks extends Component {
   render() {
     const { activeStage } = this.props;
-    const listMarks = ['Разминка', 'Воробьиные', 'Лесные птицы', 'Певчие птицы', 'Хищные птицы', 'Морские птицы'];
-    // console.log("mark", activeStage);
+    const listMarks = ['Разминка', 'Насекомоядные птицы', 'Зерноядные птицы', 'Хищные птицы', 'Рыбоядные птицы', 'Домашние птицы'];
 
     return (
       <ul className="list_marks">

@@ -55,9 +55,12 @@ class App extends Component {
   }
 
   goNextStage = () => {
-    const { activeStage } = this.state;
+    const { activeStage, isNext } = this.state;
+    if (!isNext) return;
     const stage = activeStage + 1;
     if (activeStage === 5) {
+      this.stopPlayerQuestionBlock();
+      this.stopPlayerDescriptionBlock();
       this.beepSound('assets/media/victory.mp3');
       this.showCongratPage(true);
     } else {
@@ -87,10 +90,10 @@ class App extends Component {
       activeStage, isNext, arrIncorrectAnswers, scoreValue,
     } = this.state;
     this.setState({ dataForDescription: baseBirds[activeStage][ind] });
-    if (isNext) return;
+    if (isNext || arrIncorrectAnswers.includes(ind)) return;
     if (ind === this.secret) {
       this.beepSound('assets/media/correct.mp3');
-      this.stopPlayer();
+      this.stopPlayerQuestionBlock();
       this.setState({ dataForQuestion: baseBirds[activeStage][ind] });
       this.setState({ scoreValue: scoreValue + 5 - arrIncorrectAnswers.length });
       this.setState({ correctAnswerIndex: this.secret });
@@ -108,8 +111,13 @@ class App extends Component {
     beep.play();
   }
 
-  stopPlayer = () => {
+  stopPlayerQuestionBlock = () => {
     const player = document.querySelector('.question_block--player');
+    player.pause();
+  }
+
+  stopPlayerDescriptionBlock = () => {
+    const player = document.querySelector('.media_wrapper--player');
     player.pause();
   }
 
