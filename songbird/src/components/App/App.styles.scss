@@ -2,8 +2,14 @@ html {
   box-sizing: border-box;
 
   font-family: "Roboto", sans-serif;
+
   background-color: #000000e6;
+
   user-select: none;
+
+  @media (max-width: 550px) {
+    font-size: 12px;
+  }
 }
 
 *,
@@ -32,14 +38,13 @@ button {
 }
 
 .app {
-  color: white;
-  /* font-size: 1.25rem; */
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  max-width: 1024px;
   min-width: 320px;
-  // border: 1px solid red;
+  max-width: 1024px;
   margin: 0 auto;
   padding: 15px;
+
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
 
   &--game_page {
     display: flex;
@@ -48,8 +53,9 @@ button {
 
   &--congrat_page {
     width: 100%;
-    background-color: lighten(#000000e6, 20%);
     padding: 30px;
+
+    background-color: lighten(#000000e6, 20%);
     border: 1px solid white;
     border-radius: 15px;
   }

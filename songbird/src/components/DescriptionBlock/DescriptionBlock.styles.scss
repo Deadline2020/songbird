@@ -1,69 +1,55 @@
 .description_block {
-
-  // display: flex;
-  // width: 100%;
   flex: 1 1 55%;
-  // flex-wrap: wrap;
-  // justify-content: space-around;
-  // align-items: center;
-  // width: 100%;
-  // margin: 10px 0;
-  // overflow: hidden;
-  background-color: lighten(#000000e6, 20%);
   margin: 3px 0;
   padding: 15px;
 
+  background-color: lighten(#000000e6, 20%);
   border: 1px solid white;
   border-radius: 15px;
-
-  // &--mark {
-  //   flex: 1 1 auto;
-  //   padding: 10px;
-
-  //   text-align: center;
-
-  //   background-color: #076598;
-
-  //   &-active {
-  //     background-color: lighten(#076598, 15%);
-  //   }
-  // }
 
   &--invite {
     margin: 0 0 5px 20px;
   }
-
-
 }
 
 .media_wrapper {
   display: flex;
-  width: 100%;
   flex-wrap: wrap;
+  width: 100%;
+
+  @media (max-width: 480px) {
+    text-align: center;
+  }
 
   &--img {
     width: 200px;
     height: 155px;
-    // border: 1px solid red;
+    margin: 0 10px;
 
     border-radius: 15px;
 
     object-fit: cover;
-    margin: 0 10px;
+
+    @media (max-width: 480px) {
+      margin: 0 auto;
+    }
   }
 
   &--info {
     flex: 1 1 auto;
     padding: 0 25px;
 
-    // font-size: 2rem;
+    @media (max-width: 480px) {
+      flex: 1 1 100%;
+    }
   }
 
   &--name {
     padding: 4px 0;
-font-size: 2rem;
-    border-bottom: 1px solid gray;
 
+    font-size: 2rem;
+
+    border-bottom: 1px solid gray;
   }
 
   &--species {
@@ -73,13 +59,8 @@ font-size: 2rem;
   }
 
   &--player {
-    // padding: 20px 0;
-    // border-bottom: 1px solid gray;
     width: 100%;
     margin: 15px 0;
-    // text-align: center;
-    // line-height: 50px;
-    // height: 50px;
 
     outline: none;
   }

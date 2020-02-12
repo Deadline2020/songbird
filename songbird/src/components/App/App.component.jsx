@@ -154,14 +154,9 @@ class App extends Component {
           />
         </div>
         <div className="app--congrat_page" style={{ display: 'none' }}>
-          {/* <div className="app--congrat_page"> */}
           <CongratPage
             score={scoreValue}
-          />
-          <Button
-            onClick={this.newGame}
-            active
-            text="Играть еще раз"
+            newGame={this.newGame}
           />
         </div>
       </div>

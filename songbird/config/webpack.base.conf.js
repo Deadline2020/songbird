@@ -91,7 +91,6 @@ module.exports = {
       {
         context: `${PATHS.src}/components/`, from: '**/*', to: `${PATHS.assets}media`, flatten: true, ignore: ['*.js', '*.jsx', '*.css', '*.scss'],
       },
-      // { from: `${PATHS.src}/${PATHS.assets}fonts`, to: `${PATHS.assets}fonts` },
       { from: `${PATHS.src}/static`, to: '' },
     ]),
 

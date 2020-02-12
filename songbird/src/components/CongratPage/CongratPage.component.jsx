@@ -2,9 +2,11 @@ import React, { Component } from 'react';
 
 import './CongratPage.styles.scss';
 
+import Button from '../Button';
+
 class CongratPage extends Component {
   render() {
-    const { score } = this.props;
+    const { score, newGame } = this.props;
     let caption = 'Я уверен, что Вы можете лучше!';
     const info = `Вы набрали ${score} из 30 возможных баллов`;
     let classImg = 'congratulation--img';
@@ -28,6 +30,11 @@ class CongratPage extends Component {
         <p className="congratulation--caption">
           {caption}
         </p>
+        <Button
+          onClick={newGame}
+          active
+          text="Играть еще раз"
+        />
       </div>
     );
   }

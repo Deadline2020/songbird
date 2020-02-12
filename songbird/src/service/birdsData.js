@@ -55,15 +55,15 @@ const birdsData = [
       name: 'Иволга',
       species: 'Oriolus',
       description: 'Мелодичность голоса иволги сравнивают со звучанием флейты. Свист птицы обладает низким тембром. Мелодия состоит из 4 слогов: «фиу лиу ли». В преддождевую погоду мелодичный голос иволги становится похожим на мяуканье кошки.',
-      image: 'https://pixabay.com/get/57e6dd454856ac14f6da8c7dda79367b173ed7e050546c4870277ad09648c15cba_640.jpg',
+      image: 'https://pixabay.com/get/57e6dd454856ac14f6da8c7dda79367b173ed7e050546c4870277ad1944ec45dbf_640.jpg',
       audio: 'https://www.xeno-canto.org/sounds/uploaded/SFCQLHJNZF/XC395432-brown%20oriole%20waigeo%2029%3A10%3A17%20.MP3',
     },
     {
       id: 2,
-      name: 'Пеночка-трещетка',
+      name: 'Пеночка',
       species: 'Phylloscopus',
       description: 'Каждый вид пеночек поет собственную уникальную песню. Например, мелодия пеночки-теньковки напоминает звучание капели. Песня Пеночки-трещотки - задорный треск и протяжный грустный свист. Песня пеночки-зарнички – мелодичный свист.',
-      image: 'https://pixabay.com/get/54e1d3454d52a414f6da8c7dda79367b173ed7e050546c4870277ad0964bc35fbf_640.jpg',
+      image: 'https://pixabay.com/get/54e1d3454d52a414f6da8c7dda79367b173ed7e050546c4870277ad1944ec65abd_640.jpg',
       audio: 'https://www.xeno-canto.org/sounds/uploaded/LESINAMNUB/XC523720-Wood_Warbler_Song_NL.mp3',
     },
     {
@@ -71,7 +71,7 @@ const birdsData = [
       name: 'Мухоловка',
       species: 'Muscicapa',
       description: 'Не все мухоловки хорошие певцы. Так, самец серой мухоловки издает тихий щебет и цоканье только во время токования. А вот малая мухоловка поет звонко и нежно, в ее песне переплетаются протяжные звуки, напоминающие «хил-ли, хил-ли».',
-      image: 'https://pixabay.com/get/5fe3d04a424fad0bffd8992cc62d357f1c3adde04e507441742b79d69349c4_640.jpg',
+      image: 'https://pixabay.com/get/5fe3d04a424fad0bffd8992cc62d357f1c3adde04e507441742a78d7934cc3_640.jpg',
       audio: 'https://www.xeno-canto.org/sounds/uploaded/MMEJYLOPDO/XC514019-Gr%C3%A5%20flugsnappare_07.mp3',
     },
     {
@@ -79,7 +79,7 @@ const birdsData = [
       name: 'Трясогузка',
       species: 'Motacilla',
       description: 'Самцы трясогузки весело и задорно щебечут во время брачного периода, то издавая тихие пищащие звуки, то звонко чирикая, то негромко щебеча. Кстати, только во время пения самец трясогузки перестает делать характерные движения хвостом.',
-      image: 'https://pixabay.com/get/52e2d64a4357a814f6da8c7dda79367b173ed7e050546c4870277ad0954ec75fb0_640.jpg',
+      image: 'https://pixabay.com/get/52e2d64a4357a814f6da8c7dda79367b173ed7e050546c4870277ad1944ec059b8_640.jpg',
       audio: 'https://www.xeno-canto.org/sounds/uploaded/BLMSIUFTFU/XC513497-190709_1174_Mot.flava.thunb.mp3',
     },
     {
@@ -87,7 +87,7 @@ const birdsData = [
       name: 'Горихвостка',
       species: 'Phoenicurus',
       description: 'Горихвостки круглые сутки поют, но особенно активно делают это утром и вечером. Название горихвостка получила из-за хвоста, который словно горит в солнечных лучах. Самец горихвостки охотится исключительно во время полета, а самка ищет пищу на земле.',
-      image: 'https://pixabay.com/get/53e1d74b4b55b108f5d084609629327c1436dbe6564c704c7d2e7fd6934fc658_640.jpg',
+      image: 'https://pixabay.com/get/53e1d74b4b55b108f5d084609629327c1436dbe6564c704c7d2e7ed79448cd5a_640.jpg',
       audio: 'https://www.xeno-canto.org/sounds/uploaded/YTUXOCTUEM/XC501391-Amaruornis_phoenicurus_nom-FL%20calls%20Simuelue%2031Aug19%207.05am%20LS117640a.mp3',
     },
     {
@@ -95,7 +95,7 @@ const birdsData = [
       name: 'Варакушка',
       species: 'Luscinia svecica',
       description: 'Название «варакушка» произошло от старорусского слова «варакать», те есть «нести чепуху, подражать, дразнить»',
-      image: 'https://pixabay.com/get/54e7d7444852a814f6da8c7dda79367b173ed7e050546c4870277ad09548c55fbc_640.jpg',
+      image: 'https://pixabay.com/get/54e7d7444852a814f6da8c7dda79367b173ed7e050546c4870277ad1944ec25cb0_640.jpg',
       audio: 'https://www.xeno-canto.org/sounds/uploaded/JCPKCBKKAQ/XC497804-LUSSVE_190502_4942_RNN76_AireBaieSeine.mp3',
     },
   ],
@@ -105,7 +105,7 @@ const birdsData = [
       name: 'Щегол',
       species: 'Goldfinch',
       description: 'Щеглы обоих полов поют очень красиво и мелодично. И в природе, и в неволе они щебечут практически круглый год, затихая только на время линьки. В пении щегла различают более 20 разнообразных переливчатых трелей',
-      image: 'https://pixabay.com/get/52e7d245495aae14f6da8c7dda79367b173ed7e050546c4870277ad09545cd5bbd_640.jpg',
+      image: 'https://pixabay.com/get/52e7d245495aae14f6da8c7dda79367b173ed7e050546c4870277ad1944ecc59b1_640.jpg',
       audio: 'https://www.xeno-canto.org/sounds/uploaded/NRUIFMFTXY/XC526733-European%20Goldfinch%20St%20Marys%20171008_3328.mp3',
     },
     {
@@ -163,7 +163,7 @@ const birdsData = [
       name: 'Ястреб',
       species: 'Accipitrinae',
       description: 'Происхождение слово ястреб на разных языках связано с определениями «острый», «резкий», «быстрый», «быстролетящий», что указывает на характер и образ жизни птицы.',
-      image: 'https://pixabay.com/get/57e8d0404b50ac14f6da8c7dda79367b173ed7e050546c4870277ad09344c058bd_640.jpg',
+      image: 'https://pixabay.com/get/57e8d0404b50ac14f6da8c7dda79367b173ed7e050546c4870277ad1944bc45cbc_640.jpg',
       audio: 'https://www.xeno-canto.org/sounds/uploaded/YWWWUBVAJF/XC329800-Accipiter%20superciliosus%20superciliosus%20-%20Caio%20Brito%20%28Parecis-RO%29%20-%20BRITO%2C298.MP3',
     },
     {
@@ -263,7 +263,7 @@ const birdsData = [
       name: 'Индейка',
       species: 'Meleagris gallopavo',
       description: 'Пух и перо индеек также очень ценятся, и в прошлом веке широко употреблялись для украшения дамских платьев.',
-      image: 'https://pixabay.com/get/57e3d4414850a414f6da8c7dda79367b173ed7e050546c4870277ad0924ec55abd_640.jpg',
+      image: 'https://pixabay.com/get/54e6d2434250a914f6da8c7dda79367b173ed7e050546c4870277ad0924ec55abd_640.jpg',
       audio: 'https://www.xeno-canto.org/sounds/uploaded/PMWEVMCFBB/XC520057-20180511_193802%2B090433.mp3',
     },
     {
@@ -279,7 +279,7 @@ const birdsData = [
       name: 'Гусь',
       species: 'Anser',
       description: 'Гуси очень умны и склонны защищать свою территорию. В случае тревоги птицы начинают громко кричать и хлопать крыльями. Именно так по легенде гуси спасли Рим от захватчиков.',
-      image: 'https://pixabay.com/get/50e3d54b424fad0bffd8992cc62d357f1c3adde04e507441742b7ed79144c3_640.jpg',
+      image: 'https://pixabay.com/get/54e6d14a4f56aa14f6da8c7dda79367b173ed7e050546c4870277ad19449c65fbd_640.jpg',
       audio: 'https://www.xeno-canto.org/sounds/uploaded/YTUXOCTUEM/XC481556-Anser_indicus-FL%20flight%20Boon%20Tsagan%20Lake%2031May19%205.50am%20LS117136a.mp3',
     },
     {

@@ -2,22 +2,29 @@
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  padding: 15px;
   margin-bottom: 5px;
+  padding: 15px;
 
   background-color: lighten(#000000e6, 20%);
   border: 1px solid white;
   border-radius: 15px;
 
+  @media (max-width: 480px) {
+    text-align: center;
+  }
+
   &--img {
     width: 200px;
     height: 155px;
-    // border: 1px solid red;
+    margin: 0 10px;
 
     border-radius: 15px;
 
     object-fit: cover;
-    margin: 0 10px;
+
+    @media (max-width: 480px) {
+      margin: 0 auto;
+    }
   }
 
   &--info {
@@ -25,6 +32,10 @@
     padding: 0 25px;
 
     font-size: 2rem;
+
+    @media (max-width: 480px) {
+      flex: 1 1 100%;
+    }
   }
 
   &--name {
@@ -34,13 +45,8 @@
   }
 
   &--player {
-    // padding: 20px 0;
-    // border-bottom: 1px solid gray;
     width: 100%;
     margin: 15px 0;
-    // text-align: center;
-    // line-height: 50px;
-    // height: 50px;
 
     outline: none;
   }
